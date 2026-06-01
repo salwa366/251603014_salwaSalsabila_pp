@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puisi Sal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">PuisiKu</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#puisi">Puisi</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-deco" aria-hidden="true">&#8220;</div>
+        <div class="hero-content">
+            <p class="hero-label">— koleksi puisi sal —</p>
+            <h1>Untuk segala rasa<br />yang belum sempat terutara</h1>
+            <p class="hero-sub">jika aku tak bisa hadir dalam indah matamu, maka biarlah puisiku mengalun dalam
+                sanubarimu..</p>
+            <a href="#puisi" class="btn">Baca Puisi</a>
+        </div>
+    </section>
+
+    <!-- PUISI -->
+    <section class="puisi" id="puisi">
+        <h2 class="section-title">Daftar Puisi Sal</h2>
+        <p class="section-sub">Kumpulan puisi yang dibuat sal.</p>
+
+        <div class="filter-bar">
+            <button class="filter-btn-activate" data-filter="semua">Semua</button>
+            <button class="filter-btn" data-filter="alam">Alam</button>
+            <button class="filter-btn" data-filter="bulan">Bulan</button>
+            <button class="filter-btn" data-filter="cinta">Cinta</button>
+        </div>
+
+        <div class="puisi-grid" id="puisi-grid">
+
+        <article class="puisi-card" data-kategori="alam">
+            <span class="kategori-tag">Alam</span>
+            <h3>Hujan di Bulan Mei</h3>
+            <div class="puisi-preview">
+                Hujan mengetuk kaca<br />
+                seperti kamu yang tak pernah masuk—
+            </div>
+            <button class="baca-btn" data-id="1">Baca Selengkapnya</button>
+        </article>
+
+        <article class="puisi-card" data-kategori="bulan">
+            <span class="kategori-tag">Bulan</span>
+            <h3>Pendar Bulan</h3>
+            <div class="puisi-preview">
+                ku lihat indah dan pendar nya menghiasi langit<br />
+                terang dan kilau nya membuat awan tersipu—
+            </div>
+            <button class="baca-btn" data-id="2">Baca Selengkapnya</button>
+        </article>
+
+        <article class="puisi-card" data-kategori="cinta">
+            <span class="kategori-tag">Cinta</span>
+            <h3>Nama yang Tak Kusebut</h3>
+            <div class="puisi-preview">
+                Ada nama yang selalu<br />
+                berhenti di ujung lidahku—
+            </div>
+            <button class="baca-btn" data-id="3">Baca Selengkapnya</button>
+        </article>
+
+         <article class="puisi-card" data-kategori="cinta">
+            <span class="kategori-tag">Cinta</span>
+            <h3>Sempurna Mu</h3>
+            <div class="puisi-preview">
+                tak sadarkah?<br />
+                parasmu yang menyita sorot mataku—
+            </div>
+            <button class="baca-btn" data-id="4">Baca Selengkapnya</button>
+        </article>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modal" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modal-close" aria-label="Tutup">&times;</button>
+            <span class="modal-kategori" id="modal-kategori"></span>
+            <h2 class="modal-judul" id="modal-judul"></h2>
+            <div class="modal-isi" id="modal-isi"></div>
+        </div>
+    </div>
+
+    <!-- TENTANG -->
+    <section class="tentang" id="tentang">
+        <div class="tentang-inner">
+            <div class="tentang-avatar">&#10022;</div>
+            <h2>Tentang Sal</h2>
+            <p>
+                Halo, aku penulis puisi berbakat dari jurusan informatika yang tengah kuliah di uin jurusan informatika,
+                nama ku salwa salsabila aka sal nim 251603014.
+            </p>
+            <div class="tentang-stats">
+                <div><strong id="c-puisi">0</strong><span>Puisi</span></div>
+                <div><strong id="c-kategori">0</strong><span>Kategori</span></div>
+                <div><strong id="c-tahun">0</strong><span>Tahun Menulis</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&#10022; Ruang Kata &mdash; Semua puisi adalah karya pribadi penulis.</p>
+        <p class="footer-year">&copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
